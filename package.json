@@ -1,7 +1,7 @@
 {
   "name": "@zaeyee/eslint-config",
   "version": "0.1.0",
-  "description": "",
+  "description": "Zaeyee's ESLint config.",
   "main": "./src/index.js",
   "files": [
     "src"

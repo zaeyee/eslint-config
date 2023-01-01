@@ -1,6 +1,6 @@
 # @zaeyee/eslint-config
 
-eslint-config for zaeyee.
+Zaeyee's ESLint config.
 
 ## Usage
 
