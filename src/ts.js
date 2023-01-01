@@ -8,11 +8,12 @@ module.exports = {
     // 使用 @typescript-eslint/eslint-plugin 推荐配置
     'plugin:@typescript-eslint/recommended'
   ],
+  parser: '@typescript-eslint/parser',
+  plugins: ['@typescript-eslint'],
   overrides: fs.existsSync(join(process.cwd(), tsconfig))
     ? [
         {
           files: ['*.ts', '*.tsx', '*.mts', '*.cts'],
-          parser: '@typescript-eslint/parser',
           parserOptions: {
             tsconfigRootDir: process.cwd(),
             project: [tsconfig]

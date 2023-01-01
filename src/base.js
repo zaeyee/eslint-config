@@ -10,7 +10,8 @@ module.exports = {
   },
   extends: [
     // eslint 推荐规则
-    'eslint:recommended'
-  ],
-  overrides: []
+    'eslint:recommended',
+    // eslint-config-prettier和eslint-plugin-prettier合并配置
+    'plugin:prettier/recommended'
+  ]
 }
