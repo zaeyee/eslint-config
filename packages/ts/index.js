@@ -5,21 +5,22 @@ const tsconfig = process.env.ESLINT_TSCONFIG || 'tsconfig.eslint.json'
 
 module.exports = {
   extends: [
-    // 使用 @typescript-eslint/eslint-plugin 推荐配置
+    // @zaeyee的基础配置
+    '@zaeyee/eslint-config-base',
+    // @typescript-eslint/eslint-plugin的推荐配置
     'plugin:@typescript-eslint/recommended'
   ],
-  parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint'],
   overrides: fs.existsSync(join(process.cwd(), tsconfig))
     ? [
         {
           files: ['*.ts', '*.tsx', '*.mts', '*.cts'],
+          parser: '@typescript-eslint/parser',
           parserOptions: {
             tsconfigRootDir: process.cwd(),
             project: [tsconfig]
           },
           extends: [
-            // 使用 @typescript-eslint/eslint-plugin 推荐配置（包含特别需要类型信息的规则）
+            // @typescript-eslint/eslint-plugin的推荐配置（包含特别需要类型信息的规则）
             'plugin:@typescript-eslint/recommended-requiring-type-checking'
           ]
         }

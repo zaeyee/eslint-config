@@ -1,0 +1,27 @@
+{
+  "name": "@zaeyee/eslint-config-base",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "lint": "eslint . -c index.js"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-config"
+  ],
+  "author": "zaeyee <zaeyee@163.com> (https://github.com/zaeyee)",
+  "homepage": "https://github.com/zaeyee/eslint-config",
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": ">=7.4.0",
+    "prettier": ">=2.8.0"
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1"
+  }
+}

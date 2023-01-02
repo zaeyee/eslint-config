@@ -1,0 +1,31 @@
+{
+  "name": "@zaeyee/eslint-config",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "lint": "eslint . -c index.js"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-config"
+  ],
+  "author": "zaeyee <zaeyee@163.com> (https://github.com/zaeyee)",
+  "homepage": "https://github.com/zaeyee/eslint-config",
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": ">=7.4.0",
+    "prettier": ">=2.8.0",
+    "typescript": ">=3.9"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.47.1",
+    "@typescript-eslint/parser": "^5.47.1",
+    "@zaeyee/eslint-config-ts": "workspace:*",
+    "@zaeyee/eslint-config-vue": "workspace:*",
+    "eslint-plugin-vue": "^9.8.0"
+  }
+}

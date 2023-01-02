@@ -9,9 +9,9 @@ module.exports = {
     sourceType: 'module'
   },
   extends: [
-    // eslint 推荐规则
+    // eslint的推荐配置
     'eslint:recommended',
-    // eslint-config-prettier和eslint-plugin-prettier合并配置
+    // config-prettier和plugin-prettier的合并配置，关闭所有不必要或可能与Prettier冲突的规则（注意：必须放在最后一项来覆盖其他配置）
     'plugin:prettier/recommended'
   ]
 }

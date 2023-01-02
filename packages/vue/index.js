@@ -1,6 +1,8 @@
 module.exports = {
   extends: [
-    // 使用 eslint-plugin-vue 推荐配置
+    // @zaeyee的基础配置
+    '@zaeyee/eslint-config-base',
+    // plugin-vue的推荐配置
     'plugin:vue/vue3-recommended'
   ],
   rules: {
