@@ -1,44 +1,21 @@
 {
-  "name": "@zaeyee/eslint-config",
-  "version": "0.1.1",
-  "description": "Zaeyee's ESLint config.",
-  "main": "./src/index.js",
-  "files": [
-    "src"
-  ],
+  "name": "@zaeyee/eslint-config-monorepo",
+  "private": true,
+  "version": "0.2.0-beta.0",
+  "description": "",
   "scripts": {
-    "lint": "eslint . -c ./src/index.js"
+    "lint:base": "eslint ./test/base -c ./packages/base/index.js",
+    "lint:ts": "eslint . -c ./packages/ts/index.js",
+    "lint:vue": "eslint . -c ./packages/vue/index.js",
+    "lint:vue-ts": "eslint . -c ./packages/vue-ts/index.js"
   },
-  "keywords": [
-    "eslint",
-    "eslint-config"
-  ],
+  "keywords": [],
   "author": "zaeyee <zaeyee@163.com> (https://github.com/zaeyee/)",
   "homepage": "https://github.com/zaeyee/eslint-config",
   "license": "MIT",
-  "peerDependencies": {
-    "eslint": ">=7.4.0",
-    "prettier": ">=2.8.0"
-  },
-  "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.47.1",
-    "@typescript-eslint/parser": "^5.47.1",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-vue": "^9.8.0",
-    "local-pkg": "^0.4.2"
-  },
   "devDependencies": {
-    "eslint": "^8.31.0"
-  },
-  "pnpm": {
-    "peerDependencyRules": {
-      "ignoreMissing": [
-        "typescript"
-      ]
-    }
-  },
-  "eslintConfig": {
-    "extends": "./src/index.js"
+    "bumpp": "^8.2.1",
+    "eslint": "^8.31.0",
+    "prettier": "^2.8.1"
   }
 }
