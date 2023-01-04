@@ -1,9 +1,9 @@
 module.exports = {
   extends: [
+    // plugin-vue的推荐配置
+    'plugin:vue/vue3-recommended',
     // @zaeyee的基础配置
     '@zaeyee/eslint-config-base',
-    // plugin-vue的推荐配置
-    'plugin:vue/vue3-recommended'
   ],
   rules: {
     // 关闭vue组件名称必须多单词的限制
