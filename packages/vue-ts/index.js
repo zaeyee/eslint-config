@@ -12,6 +12,6 @@ module.exports = {
     // @zaeyee的TypeScript配置
     '@zaeyee/eslint-config-ts',
     // @zaeyee的Vue配置
-    '@zaeyee/eslint-config-vue',
+    '@zaeyee/eslint-config-vue'
   ]
 }
