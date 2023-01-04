@@ -9,9 +9,9 @@ module.exports = {
     }
   ],
   extends: [
-    // @zaeyee的Vue配置
-    '@zaeyee/eslint-config-vue',
     // @zaeyee的TypeScript配置
-    '@zaeyee/eslint-config-ts'
+    '@zaeyee/eslint-config-ts',
+    // @zaeyee的Vue配置
+    '@zaeyee/eslint-config-vue'
   ]
 }
