@@ -4,12 +4,6 @@ const { join } = require('path')
 const tsconfig = process.env.ESLINT_TSCONFIG || 'tsconfig.eslint.json'
 
 module.exports = {
-  extends: [
-    // @zaeyee的基础配置
-    '@zaeyee/eslint-config-base',
-    // @typescript-eslint/eslint-plugin的推荐配置
-    'plugin:@typescript-eslint/recommended'
-  ],
   overrides: fs.existsSync(join(process.cwd(), tsconfig))
     ? [
         {
@@ -25,5 +19,11 @@ module.exports = {
           ]
         }
       ]
-    : []
+    : [],
+  extends: [
+    // @typescript-eslint/eslint-plugin的推荐配置
+    'plugin:@typescript-eslint/recommended',
+    // @zaeyee的基础配置
+    '@zaeyee/eslint-config-base'
+  ]
 }

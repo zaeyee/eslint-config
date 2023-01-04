@@ -17,8 +17,7 @@
   "homepage": "https://github.com/zaeyee/eslint-config",
   "license": "MIT",
   "peerDependencies": {
-    "eslint": ">=7.4.0",
-    "prettier": ">=2.8.0"
+    "eslint": ">=7.4.0"
   },
   "dependencies": {
     "@zaeyee/eslint-config-base": "workspace:*",
