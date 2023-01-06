@@ -17,10 +17,16 @@
   "homepage": "https://github.com/zaeyee/eslint-config",
   "license": "MIT",
   "peerDependencies": {
-    "eslint": ">=7.4.0"
+    "eslint": ">=7.4.0",
+    "prettier": ">=2.8.0"
   },
   "dependencies": {
-    "@zaeyee/eslint-config-base": "workspace:*",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.31.0",
+    "prettier": "^2.8.1"
   }
 }

@@ -11,7 +11,7 @@
   "homepage": "https://github.com/zaeyee/eslint-config",
   "license": "MIT",
   "devDependencies": {
-    "@zaeyee/eslint-config-base": "*",
+    "@zaeyee/eslint-config-base": "workspace:*",
     "bumpp": "^8.2.1",
     "eslint": "^8.31.0",
     "prettier": "^2.8.1"
