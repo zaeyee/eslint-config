@@ -1,7 +1,7 @@
 {
   "name": "@zaeyee/eslint-config-monorepo",
   "private": true,
-  "version": "0.2.0-beta.7",
+  "version": "0.2.0-beta.8",
   "description": "",
   "scripts": {
     "release": "bumpp package.json packages/*/package.json && pnpm -r publish --access public"
@@ -11,9 +11,9 @@
   "homepage": "https://github.com/zaeyee/eslint-config",
   "license": "MIT",
   "devDependencies": {
-    "@zaeyee/eslint-config-base": "*",
-    "bumpp": "^8.2.1",
-    "eslint": "^8.31.0",
-    "prettier": "^2.8.1"
+    "@zaeyee/eslint-config-base": "^0.3.0",
+    "bumpp": "^9.2.0",
+    "eslint": "^8.49.0",
+    "prettier": "^3.0.3"
   }
 }

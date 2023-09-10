@@ -1,6 +1,6 @@
 {
   "name": "@zaeyee/eslint-config",
-  "version": "0.2.0-beta.7",
+  "version": "0.2.0-beta.8",
   "description": "",
   "main": "index.js",
   "files": [
@@ -22,10 +22,10 @@
     "typescript": ">=3.9"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.47.1",
-    "@typescript-eslint/parser": "^5.47.1",
+    "@typescript-eslint/eslint-plugin": "^6.6.0",
+    "@typescript-eslint/parser": "^6.6.0",
     "@zaeyee/eslint-config-ts": "workspace:*",
     "@zaeyee/eslint-config-vue": "workspace:*",
-    "eslint-plugin-vue": "^9.8.0"
+    "eslint-plugin-vue": "^9.17.0"
   }
 }
