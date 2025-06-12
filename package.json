@@ -1,19 +1,42 @@
 {
-  "name": "@zaeyee/eslint-config-monorepo",
-  "private": true,
-  "version": "0.4.0",
+  "name": "@zaeyee/eslint-config",
+  "version": "1.0.0",
   "description": "",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "scripts": {
-    "release": "bumpp package.json packages/*/package.json && pnpm -r publish --access public"
+    "lint": "eslint . -c index.js",
+    "release": "bumpp package.json && pnpm -r publish --access public",
+    "release:legacy": "bumpp packages/*/package.json && pnpm -r publish --access public"
   },
-  "keywords": [],
-  "author": "zaeyee <zaeyee@163.com> (https://github.com/zaeyee/)",
+  "keywords": [
+    "eslint",
+    "eslint-config"
+  ],
+  "author": "zaeyee <zaeyee@163.com> (https://github.com/zaeyee)",
   "homepage": "https://github.com/zaeyee/eslint-config",
   "license": "MIT",
+  "peerDependencies": {
+    "eslint": ">=9.28.0",
+    "prettier": ">=3.0.3",
+    "typescript": ">=5.8.3"
+  },
+  "dependencies": {
+    "@eslint/js": "^9.28.0",
+    "@unocss/eslint-config": "^66.1.4",
+    "eslint": "^9.28.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-vue": "^10.2.0",
+    "typescript-eslint": "^8.34.0"
+  },
   "devDependencies": {
     "@zaeyee/eslint-config-base": "workspace:*",
     "bumpp": "^9.2.0",
     "eslint": "^8.49.0",
-    "prettier": "^3.0.3"
-  }
+    "prettier": "^3.0.3",
+    "typescript": "^5.8.3"
+  },
+  "packageManager": "pnpm@10.12.1+sha512.f0dda8580f0ee9481c5c79a1d927b9164f2c478e90992ad268bbb2465a736984391d6333d2c327913578b2804af33474ca554ba29c04a8b13060a717675ae3ac"
 }
